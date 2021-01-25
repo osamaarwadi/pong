@@ -277,7 +277,7 @@ function love.keypressed(key)
     -- if we press enter during either the start or serve phase, it should
     -- transition to the next appropriate state
     -- in case its the AI's serve, the game will automatically transition to the play state
-    elseif key == 'enter' or key == 'return' or servingPlayer == 2then
+    elseif key == 'enter' or key == 'return' or servingPlayer == 2 then
         if gameState == 'start' then
             gameState = 'serve'
         elseif gameState == 'serve' then
